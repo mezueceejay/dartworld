@@ -1,27 +1,27 @@
-##A Collection of Dart Files
+# A Collection of Dart Files
 it's nothing serious just small programs i was playing with.
 
-#Example
-<code>
-import 'dart:io';
-  void main(){
-    ///This Project was made to check my understanding of Dart
-    ///this is different from the one on dartpad
-    ///it accepts data from command line though.
-     print("Enter Fibonacci Number");
-     String number = stdin.readLineSync();
-     int num = int.parse(number);
-     print(fib(num));
-     
-  }
-
-  int fib(int n){
-    int result;
-    if(n <= 2){
-      result = 1;
-    }else if(n >= 3){
-      result = fib(n-1) + fib(n-2);
-    }
-    return result;
-  }
+## Example
+<code> <br>
+import 'dart:io'; <br>
+  void main(){  <br>
+    ///This Project was made to check my understanding of Dart <br>
+    ///this is different from the one on dartpad <br>
+    ///it accepts data from command line though.<br>
+     print("Enter Fibonacci Number");<br>
+     String number = stdin.readLineSync();<br>
+     int num = int.parse(number);<br>
+     print(fib(num));<br>
+     <br>
+  }<br>
+<br>
+  int fib(int n){<br>
+    int result;<br>
+    if(n <= 2){<br>
+      result = 1;<br>
+    }else if(n >= 3){<br>
+      result = fib(n-1) + fib(n-2);<br>
+    }<br>
+    return result;<br>
+  }<br>
 </code>

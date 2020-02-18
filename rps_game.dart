@@ -4,7 +4,7 @@ void main(){
   stdout.writeln("Enter either Rock, Paper or Scissors");
   String answer = stdin.readLineSync();
   humanGuess(answer);
-  robotGuess();
+  stdout.write(robotGuess());
 }
 
 String humanGuess(String guessInput){
@@ -20,17 +20,16 @@ String humanGuess(String guessInput){
 }
 
 String robotGuess(){
-  String randNum;
   String robotAnswer;
   Random rand = Random();
   int randomNumber = rand.nextInt(3);
   switch(randomNumber){
     case 0:
-    return robotAnswer = randNum = "Paper";
+    return robotAnswer = "Paper";
     case 1:
-    return robotAnswer = randNum = "Rock";
+    return robotAnswer = "Rock";
     case 2:
-    return robotAnswer = randNum = "Scissor";
+    return robotAnswer =  "Scissor";
   }
   return robotAnswer;
 }
